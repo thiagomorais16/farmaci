@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+    <title>Farmacia da Gente</title>
+</head>
+<body>
+    <header>
+        <h1>Home</h1>
+        <h1>Cadastro<br>de Medicamentos</h1>
+        <h1>Cadastro<br>de Vacinas</h1>
+        <h1>Cadastro<br>de Cosméticos</h1>
+    </header>
+    <div class="titlefarm">
+        <img src="farmacia.png" alt="logo_farmacia">
+        <h1  id="cnpj">Cadastro de Medicamentos <p class="collum">Farmácia da Gente</p></h1>
+      
+    </div>
+    <section id="form-grid">
+            <div id="form">
+                <form onsubmit="addPet()">
+                    <label for="farName">Medicamento*</label>
+                    <input autocomplete="off" type="text" required id="fname" name="farName">
+                    <label for="qtd">Quantidade*</label>
+                    <input autocomplete="off" type="text" required id="fqtd" name="qtd">
+                    <label for="tClass">Classe do Medicamento*</label>
+                    <input autocomplete="off" type="text" required id="fclass" name="tClass" style="margin-bottom: 58px">
+                    <button class="submit-button" type="submit"> Cadastrar </button>
+                 </form>
+            </div>
+            <div>
+                <table id="dataTable">
+                    <tr>
+                        <th>ID</th>
+                        <th>Medicamento</th>
+                        <th>Quantidade</th>
+                        <th>Classe de Medicamento</th>
+                        <th>Remover</th>
+                </table>
+            </div>
+         
+    </section>
+    <script src="farm.js"></script>
+</body>
+</html>
